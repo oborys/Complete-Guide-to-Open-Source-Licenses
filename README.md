@@ -1,4 +1,4 @@
-# Full guide to open source licenses for developers
+# Complete guide to open source licenses for developers
 
 - [Introduction](#introduction)
     - [Disclaimer](#disclaimer)
