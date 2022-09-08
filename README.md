@@ -36,7 +36,9 @@ Information in this guide should not be considered legal advice.
 
 ## Open source licenses
 
-A license for open source projects is a legal contract that regulates the relationship between the author(s) and the user, which describes the terms of use of the project/code, including in commercial programs. The license defines what can and cannot be done with the software components, the obligations, and the features of use. Also, the license regulates the responsibility of the authors and contributors to the project. In licenses, pragmatism and free software ideology often fight. When we hear open source, we may think that it is possible to use/modify projects without problems. Still, as mentioned above, each license imposes certain obligations from the moment of use, at least - to keep the copyright. Specific licenses may require you to publish the source code of the entire project in which the code was used, for example, when using a project under the GPL license.
+A license for open source projects is a legal contract that regulates the relationship between the author(s) and the user, which describes the terms of use of the project/code, including in commercial programs. The license defines what can and cannot be done with the software components, the obligations, and the features of use. Also, the license regulates the responsibility of the authors and contributors to the project. Courts of different countries have ruled that an open-source license is an enforceable contract.
+
+In licenses, pragmatism and free software ideology often fight. When we hear open source, we may think that it is possible to use/modify projects without problems. Still, as mentioned above, each license imposes certain obligations from the moment of use, at least - to keep the copyright. Specific licenses may require you to publish the source code of the entire project in which the code was used, for example, when using a project under the GPL license.
 
 Licenses can be divided into:
 
