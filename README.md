@@ -8,7 +8,6 @@
     - [Apache](#apache)
     - [MIT](#mit)
     - [BSD](#bsd)
-    - [Public Domain (Creative Commons)](#public-domain-creative-commons)
 - [Other interesting licenses](#other-interesting-licenses)
 - [What about unlicensed projects?](#what-about-unlicensed-projects)
 - [Compatibility of licenses](#compatibility-of-licenses)
@@ -42,15 +41,15 @@ In licenses, pragmatism and free software ideology often fight. When we hear ope
 
 Licenses can be divided into:
 
-* Copyleft (GNU, Microsoft Public License),
-* Permissive (Apache, MIT, BSD).
+* Copyleft (GPL, Mozilla Public License, Eclipse, CC-SA, Microsoft Public License, etc.),
+* Permissive (Apache, MIT, BSD, etc.).
 
 Copyleft can also be divided into **“weak”** and **“strong”**:
 
 * **"strong"** include GNU, GNU Affero General Public License
 * **"weak"** - for example, Eclipse, GNU Lesser General Public License (LGPL).
 
-For weak Copyleft licenses, it is permissible to compile different binary files and release the result with a different type of license, or not to change the license of the source project.
+For weak copyleft licenses, it is permissible to compile via dynamic linking weak copyleft software with proprietary software without requiring your proprietary software to be licensed under the weak copyleft license.
 
 ![img](img/top_license.png)
 
@@ -121,20 +120,9 @@ Some code of BSD projects distributed under BSD or similar licenses is used in c
 
 **Projects running BSD:** Flutter, libssh2
 
-### Public Domain (Creative Commons)
-
-The license allows users to distribute and copy the author's works.
-For StackOverflow users, it will be interesting to know that according to the [Terms of Service](https://stackoverflow.com/legal/terms-of-service/public#licensing), all content created on the platform (including questions and answers) is licensed under Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
-License is also used on the YouTube platform for [video creators](https://support.google.com/youtube/answer/2797468?hl=en).
-
 ## Other interesting licenses
 
-[Do What The F*ck You Want To Public License](https://spdx.org/licenses/WTFPL.html) - no comments here, in fact the license can be classified as permissive.
-
-
-**The Unlicense**
-
-Developers, on the one hand, spend time choosing a license and select the license with the name "The Unlicense". On the other hand, this type of license is a copyleft. Accordingly, it will be a legal problem in a commercial project. However, it should be noted that the license is on the list of Recommended (approved) licenses of the Open source initiative and describes the possibilities for copying, modification, etc.
+[Do What The F*ck You Want To Public License](https://spdx.org/licenses/WTFPL.html) - no comments here, in fact the license can be classified as permissive.  Some corporate legal departments find it to be too vague and ambiguous to be a legally effective license and thus prohibit using software with that license.
 
 **Open Government License — Canada**
 
@@ -145,6 +133,8 @@ Canadian government license for open source. According to [the text](https://ope
 License from MariaDB Corporation, which develops the relational database project of the same name. The license is attractive in that it limits the project's use only in a non-production project (non-production use of the Licensed Work).
 
 Restrictions are set for four years. And the term is calculated from the change date or the fourth anniversary of the first public distribution of a specific version of the project, whichever comes first.
+
+The BSL license does not meet the definition of open source. It is part of a family of licenses sometimes referred to as "source-available" licenses, which look and act like open source licenses but fail to meet the definition of Open Source by the Open Source Initiative.
 
 ## What about unlicensed projects?
 
@@ -203,23 +193,26 @@ The keyword License or COPYING must be placed at the beginning of the file name,
 
 ## The project includes a fork or part of another project with different licenses.
 
-When your open source project contains forks of other projects or used project code with different licenses and copyrights, a separate directory is created where the licenses of the projects used in your project are placed. 
-
 ![img](img/multi-licensing.png)
 
-For example: [Kubernetes example](https://github.com/kubernetes/kubernetes/tree/master/LICENSES), [Elasticsearch client license](https://github.com/elastic/elasticsearch/tree/main/client/rest/licenses), [CockroachDB](https://github.com/cockroachdb/cockroach/blob/master/LICENSE). 
+When your open source project contains forks of other projects or uses project code with different licenses and copyrights, create a separate directory where you place the licenses of the projects that are used in your project. Refer to the following examples:
+
+[Kubernetes example](https://github.com/kubernetes/kubernetes/tree/master/LICENSES), 
+[Elasticsearch client license](https://github.com/elastic/elasticsearch/tree/main/client/rest/licenses), 
+[CockroachDB](https://github.com/cockroachdb/cockroach/blob/master/LICENSE). 
 
 ![img](img/included_license.png)
 
-> An example of organizing information about licenses used in different parts of the project
-
-It may be a good practice to add appropriate license and/or copyright information to each source file. Sample: About [License Headers in Contributing to elasticsearch](https://github.com/elastic/elasticsearch/blob/main/CONTRIBUTING.md#license-headers).
+A recommended practice is to add appropriate license and copyright information to each code file, as shown in the following example:
 
 ![img](img/header.png)
 
+Sample: About [License Headers in Contributing to elasticsearch](https://github.com/elastic/elasticsearch/blob/main/CONTRIBUTING.md#license-headers).
+
+
 ## About changing the license
 
-Can I change the project license? Yes, the license can be changed, but the license change must be agreed upon with all project contributors. Even if it was a contributor to the Readme file. So it's good to do it in the beginning when you're the only contributor. You can even change the license to a proprietary license, but such a change is not retroactive. Accordingly, all previous versions/releases can be used with the licenses in place at that time.
+Can a project be relicensed under a different license? Yes, the license can be changed, but the license change must be agreed upon with all project contributors. Even if it was a contributor to the Readme file. So it's good to do it in the beginning when you're the only contributor. You can even change the license to a proprietary license, but such a change is not retroactive. Accordingly, all previous versions/releases can be used with the licenses in place at that time.
 There are cases when you transfer rights (copyright, moral rights) to an organization, a legal entity that owns the rights to the project. In this case, the relevant rights owners can change the license without the contributors' consent. See [Contributor License Agreement (CLA)](#contributor-license-agreement-cla)
 
 **Case:** Facebook was using a BSD license plus their custom Additional Grant of Patent Rights. License [was changed to MIT](https://github.com/facebook/react/commit/b765fb25ebc6e53bb8de2496d2828d9d01c2774b ) on September 26, 2017, and the Patent grant was deleted.
@@ -281,6 +274,8 @@ Some companies create their licensing policies. The policies describe procedures
 In particular, permissive licenses (Apache, MIT, BSD) or other special licenses of companies are usually added to the permissible ones. In most companies/organizations, the default copyright is the legal name. When creating and contributing to relevant projects, intellectual rights may belong to individual employees or be transferred to the company/customer (where the employee works), unless otherwise specified in the contract.
 
 For example, patent protection covers specific processes, products and methods; and copyright protects the corresponding work, in our case, program code, graphic elements, and images.
+
+For StackOverflow users, it will be interesting to know that according to the [Terms of Service](https://stackoverflow.com/legal/terms-of-service/public#licensing), all content created on the platform (including questions and answers) is licensed under Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) and it's copyleft. Using StackOverflow snippets can be a problem for your company's legal department.
 
 I give an example of a list of licenses with a level of risk relative to use in proprietary software. The greater the risk, the greater the problem of using adequately licensed components in your proprietary (commercial) software.
 
