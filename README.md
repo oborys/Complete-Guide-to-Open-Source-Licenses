@@ -72,7 +72,7 @@ Generally, it is common practice to recommend a license for use (except supersed
 The GPL is generally considered an "aggressive" license, which sometimes is incompatible with other copyleft licenses. 
 In addition, this license is often called viral license because they are transferred from project to project.
 
-If you use GPL-licensed projects in your software, then all your software is considered a "work based on" the GPL. Copyright and patent usage rights are unregulated. Who then monitors that GPL projects remain copyleft? Various associations and unions do this, but in addition, individual contributors and free software evangelists ([Harald Welte](https://wiki.fsfe.org/Migrated/GPL%20Enforcement%20Cases)) also act as plaintiffs in cases of violation of the license agreement. Besides Free Software Foundation (FSF) - this organization owns the rights to parts of the GNU systems project.
+If you use GPL-licensed projects in your software, then all your software is considered a "work based on" the GPL. Be able to disclosure corresponding source codes by request. Copyright and patent usage rights are unregulated. Who then monitors that GPL projects remain copyleft? Various associations and unions do this, but in addition, individual contributors and free software evangelists ([Harald Welte](https://wiki.fsfe.org/Migrated/GPL%20Enforcement%20Cases)) also act as plaintiffs in cases of violation of the license agreement. Besides Free Software Foundation (FSF) - this organization owns the rights to parts of the GNU systems project.
 
 **Exceptions to the GNU Lesser General Public License**
 
