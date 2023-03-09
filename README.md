@@ -269,7 +269,7 @@ Instead, it is better to go through prevention, that is, to conditionally know a
 
 ## Open source policies in commercial companies
 
-Some companies create their licensing policies. The policies describe procedures and requirements for publishing projects. In addition, there are also requirements for project licenses that can be used in the company. There may also be lists of valid and invalid licenses (for example, block, allow list).
+Some companies create their licensing policies. The policies describe procedures and requirements for publishing projects. In addition, there are also requirements for project licenses that can be used in the company. There may also be lists of valid and invalid licenses (for example, open-source licenses block/allow list).
 
 In particular, permissive licenses (Apache, MIT, BSD) or other special licenses of companies are usually added to the permissible ones. In most companies/organizations, the default copyright is the legal name. When creating and contributing to relevant projects, intellectual rights may belong to individual employees or be transferred to the company/customer (where the employee works), unless otherwise specified in the contract.
 
